@@ -1,0 +1,415 @@
+{
+  "model": "Sun-only prograde zero-revolution Lambert; ideal impulsive patched conics",
+  "method": "Exploratory analysis after seeing v0.4 outcomes; discrete uniform CVaR90 design days 0-14; evaluation days 15-30; arrival slack +/-7 days; max nominal penalty 0.1 km/s relative to each domain nominal",
+  "limits": {
+    "c3": 25.0,
+    "dv": 6.2,
+    "tof": [
+      140,
+      321
+    ]
+  },
+  "sources": [
+    {
+      "target": 399,
+      "file": "399_2028-01-01_2029-11-20.json",
+      "sha256": "3c64905211242793dd37ab8ae85d9ba850269b3c1a5034ee55ee5ba83bf128ff",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&CENTER=%27500%4010%27&EPHEM_TYPE=VECTORS&START_TIME=%272028-01-01%27&STOP_TIME=%272029-11-20%27&STEP_SIZE=%271+d%27&TIME_TYPE=TDB&OUT_UNITS=KM-S&REF_PLANE=ECLIPTIC&REF_SYSTEM=ICRF&VEC_CORR=NONE&VEC_TABLE=2&CSV_FORMAT=YES&OBJ_DATA=NO"
+    },
+    {
+      "target": 499,
+      "file": "499_2028-01-01_2029-11-20.json",
+      "sha256": "98637748f8642e7bdb45c280156d68bd87e81a6bbf4b026725da3246cbecb093",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&CENTER=%27500%4010%27&EPHEM_TYPE=VECTORS&START_TIME=%272028-01-01%27&STOP_TIME=%272029-11-20%27&STEP_SIZE=%271+d%27&TIME_TYPE=TDB&OUT_UNITS=KM-S&REF_PLANE=ECLIPTIC&REF_SYSTEM=ICRF&VEC_CORR=NONE&VEC_TABLE=2&CSV_FORMAT=YES&OBJ_DATA=NO"
+    },
+    {
+      "target": 399,
+      "file": "399_2030-10-01_2032-02-16.json",
+      "sha256": "df81509b54b8431f0729e61c98220dc8d459ed8736113087640bb6acb4855d3a",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&CENTER=%27500%4010%27&EPHEM_TYPE=VECTORS&START_TIME=%272030-10-01%27&STOP_TIME=%272032-02-16%27&STEP_SIZE=%271+d%27&TIME_TYPE=TDB&OUT_UNITS=KM-S&REF_PLANE=ECLIPTIC&REF_SYSTEM=ICRF&VEC_CORR=NONE&VEC_TABLE=2&CSV_FORMAT=YES&OBJ_DATA=NO"
+    },
+    {
+      "target": 499,
+      "file": "499_2030-10-01_2032-02-16.json",
+      "sha256": "431f46574b9d1d827b09ceb57451a69c111604f252a954d3ecb8df14f40b23f7",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&CENTER=%27500%4010%27&EPHEM_TYPE=VECTORS&START_TIME=%272030-10-01%27&STOP_TIME=%272032-02-16%27&STEP_SIZE=%271+d%27&TIME_TYPE=TDB&OUT_UNITS=KM-S&REF_PLANE=ECLIPTIC&REF_SYSTEM=ICRF&VEC_CORR=NONE&VEC_TABLE=2&CSV_FORMAT=YES&OBJ_DATA=NO"
+    },
+    {
+      "target": 399,
+      "file": "399_2032-12-01_2034-04-18.json",
+      "sha256": "4216252892084d845b33565b132b67af9118227fc194f74c99b7e8931594fb4f",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&CENTER=%27500%4010%27&EPHEM_TYPE=VECTORS&START_TIME=%272032-12-01%27&STOP_TIME=%272034-04-18%27&STEP_SIZE=%271+d%27&TIME_TYPE=TDB&OUT_UNITS=KM-S&REF_PLANE=ECLIPTIC&REF_SYSTEM=ICRF&VEC_CORR=NONE&VEC_TABLE=2&CSV_FORMAT=YES&OBJ_DATA=NO"
+    },
+    {
+      "target": 499,
+      "file": "499_2032-12-01_2034-04-18.json",
+      "sha256": "ea533c965e5a4712fde217f866d165883c49088d0fb7ffc176689d07f27a5f3b",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&CENTER=%27500%4010%27&EPHEM_TYPE=VECTORS&START_TIME=%272032-12-01%27&STOP_TIME=%272034-04-18%27&STEP_SIZE=%271+d%27&TIME_TYPE=TDB&OUT_UNITS=KM-S&REF_PLANE=ECLIPTIC&REF_SYSTEM=ICRF&VEC_CORR=NONE&VEC_TABLE=2&CSV_FORMAT=YES&OBJ_DATA=NO"
+    },
+    {
+      "target": 399,
+      "file": "399_2035-02-01_2036-06-17.json",
+      "sha256": "f7005ee5e737aafed8a7a9bafa53209136d40023a4aa40d19653b14bbc1074d4",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&CENTER=%27500%4010%27&EPHEM_TYPE=VECTORS&START_TIME=%272035-02-01%27&STOP_TIME=%272036-06-17%27&STEP_SIZE=%271+d%27&TIME_TYPE=TDB&OUT_UNITS=KM-S&REF_PLANE=ECLIPTIC&REF_SYSTEM=ICRF&VEC_CORR=NONE&VEC_TABLE=2&CSV_FORMAT=YES&OBJ_DATA=NO"
+    },
+    {
+      "target": 499,
+      "file": "499_2035-02-01_2036-06-17.json",
+      "sha256": "66811ace3c48352b478e0be9b2fba2885b89e685231f877f5d9d628949fed392",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&CENTER=%27500%4010%27&EPHEM_TYPE=VECTORS&START_TIME=%272035-02-01%27&STOP_TIME=%272036-06-17%27&STEP_SIZE=%271+d%27&TIME_TYPE=TDB&OUT_UNITS=KM-S&REF_PLANE=ECLIPTIC&REF_SYSTEM=ICRF&VEC_CORR=NONE&VEC_TABLE=2&CSV_FORMAT=YES&OBJ_DATA=NO"
+    }
+  ],
+  "windows": [
+    {
+      "year": 2028,
+      "coarse_evaluations": 2356,
+      "fine_evaluations": 201,
+      "min_dv_unconstrained": {
+        "launch": "2028-11-23",
+        "arrival": "2029-09-19",
+        "c3": 9.117976144153861,
+        "dv": 5.861253771389058
+      },
+      "min_dv_under_c3": {
+        "launch": "2028-11-23",
+        "arrival": "2029-09-19",
+        "c3": 9.117976144153861,
+        "dv": 5.861253771389058
+      },
+      "status": "ok",
+      "reference_arrival": "2029-09-19",
+      "candidate_count": 539,
+      "incomplete_design_profiles": 0,
+      "solver_or_data_failures": 0,
+      "missing_policies": [],
+      "policies": [
+        {
+          "year": 2028,
+          "launch": "2028-11-23",
+          "arrival": "2029-09-19",
+          "tof": 300,
+          "c3": 9.117976144153861,
+          "nominal_dv": 5.861253771389058,
+          "design_cvar90": 6.047099466390316,
+          "design_feasible": 1.0,
+          "policy": "fixed_nominal",
+          "stress_feasible": 0.2857142857142857,
+          "extreme_feasible": 0.0,
+          "uniform_feasible": 0.5483870967741935,
+          "max_inclination_deg": 26.74427822100142
+        },
+        {
+          "year": 2028,
+          "launch": "2028-11-16",
+          "arrival": "2029-09-19",
+          "tof": 307,
+          "c3": 9.73417647073859,
+          "nominal_dv": 5.890746081689655,
+          "design_cvar90": 5.895783462270157,
+          "design_feasible": 1.0,
+          "policy": "fixed_cvar90",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 0.2222222222222222,
+          "uniform_feasible": 0.7741935483870968,
+          "max_inclination_deg": 7.6462616311016856
+        },
+        {
+          "year": 2028,
+          "launch": "2028-11-23",
+          "arrival": "2029-09-19",
+          "tof": 300,
+          "c3": 9.117976144153861,
+          "nominal_dv": 5.861253771389058,
+          "design_cvar90": 6.047099466390316,
+          "design_feasible": 1.0,
+          "policy": "flex_nominal",
+          "stress_feasible": 0.2857142857142857,
+          "extreme_feasible": 0.0,
+          "uniform_feasible": 0.5483870967741935,
+          "max_inclination_deg": 26.74427822100142
+        },
+        {
+          "year": 2028,
+          "launch": "2028-11-16",
+          "arrival": "2029-09-20",
+          "tof": 308,
+          "c3": 9.750125410901504,
+          "nominal_dv": 5.892985753927049,
+          "design_cvar90": 5.894237745591306,
+          "design_feasible": 1.0,
+          "policy": "flex_cvar90",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 0.3333333333333333,
+          "uniform_feasible": 0.8064516129032258,
+          "max_inclination_deg": 7.2980429105487055
+        },
+        {
+          "year": 2028,
+          "launch": "2028-11-16",
+          "arrival": "2029-09-19",
+          "tof": 307,
+          "c3": 9.73417647073859,
+          "nominal_dv": 5.890746081689655,
+          "design_cvar90": 5.895783462270157,
+          "design_feasible": 1.0,
+          "policy": "fixed_buffer_7",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 0.2222222222222222,
+          "uniform_feasible": 0.7741935483870968,
+          "max_inclination_deg": 7.6462616311016856
+        },
+        {
+          "year": 2028,
+          "launch": "2028-11-09",
+          "arrival": "2029-09-19",
+          "tof": 314,
+          "c3": 11.23383652032451,
+          "nominal_dv": 5.971699643256911,
+          "design_cvar90": 5.967044128359935,
+          "design_feasible": 1.0,
+          "policy": "fixed_buffer_14",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 1.0,
+          "uniform_feasible": 1.0,
+          "max_inclination_deg": 4.46969377524017
+        }
+      ]
+    },
+    {
+      "year": 2031,
+      "coarse_evaluations": 2318,
+      "fine_evaluations": 201,
+      "min_dv_unconstrained": {
+        "launch": "2030-12-25",
+        "arrival": "2031-10-04",
+        "c3": 10.733824196800956,
+        "dv": 6.217527297638765
+      },
+      "min_dv_under_c3": {
+        "launch": "2030-12-25",
+        "arrival": "2031-10-04",
+        "c3": 10.733824196800956,
+        "dv": 6.217527297638765
+      },
+      "status": "no feasible point in scanned grid",
+      "solver_or_data_failures": 0
+    },
+    {
+      "year": 2033,
+      "coarse_evaluations": 2318,
+      "fine_evaluations": 231,
+      "min_dv_unconstrained": {
+        "launch": "2033-04-18",
+        "arrival": "2033-11-04",
+        "c3": 9.152430648812377,
+        "dv": 6.051946813061583
+      },
+      "min_dv_under_c3": {
+        "launch": "2033-04-18",
+        "arrival": "2033-11-04",
+        "c3": 9.152430648812377,
+        "dv": 6.051946813061583
+      },
+      "status": "ok",
+      "reference_arrival": "2033-11-04",
+      "candidate_count": 367,
+      "incomplete_design_profiles": 0,
+      "solver_or_data_failures": 0,
+      "missing_policies": [
+        "fixed_buffer_14"
+      ],
+      "policies": [
+        {
+          "year": 2033,
+          "launch": "2033-04-18",
+          "arrival": "2033-11-04",
+          "tof": 200,
+          "c3": 9.152430648812377,
+          "nominal_dv": 6.051946813061583,
+          "design_cvar90": 6.198028581609504,
+          "design_feasible": 0.9333333333333333,
+          "policy": "fixed_nominal",
+          "stress_feasible": 0.0,
+          "extreme_feasible": 0.0,
+          "uniform_feasible": 0.45161290322580644,
+          "max_inclination_deg": 2.818349818831415
+        },
+        {
+          "year": 2033,
+          "launch": "2033-04-11",
+          "arrival": "2033-11-04",
+          "tof": 207,
+          "c3": 9.575049100229698,
+          "nominal_dv": 6.100518955797741,
+          "design_cvar90": 6.097378661438102,
+          "design_feasible": 1.0,
+          "policy": "fixed_cvar90",
+          "stress_feasible": 0.8571428571428571,
+          "extreme_feasible": 0.0,
+          "uniform_feasible": 0.6774193548387096,
+          "max_inclination_deg": 3.5262787748801485
+        },
+        {
+          "year": 2033,
+          "launch": "2033-04-18",
+          "arrival": "2033-11-04",
+          "tof": 200,
+          "c3": 9.152430648812377,
+          "nominal_dv": 6.051946813061583,
+          "design_cvar90": 6.198028581609504,
+          "design_feasible": 0.9333333333333333,
+          "policy": "flex_nominal",
+          "stress_feasible": 0.0,
+          "extreme_feasible": 0.0,
+          "uniform_feasible": 0.45161290322580644,
+          "max_inclination_deg": 2.818349818831415
+        },
+        {
+          "year": 2033,
+          "launch": "2033-04-11",
+          "arrival": "2033-11-03",
+          "tof": 206,
+          "c3": 9.48115197791176,
+          "nominal_dv": 6.094345302098268,
+          "design_cvar90": 6.094272867237669,
+          "design_feasible": 1.0,
+          "policy": "flex_cvar90",
+          "stress_feasible": 0.8571428571428571,
+          "extreme_feasible": 0.0,
+          "uniform_feasible": 0.6774193548387096,
+          "max_inclination_deg": 3.4727291427811355
+        },
+        {
+          "year": 2033,
+          "launch": "2033-04-11",
+          "arrival": "2033-11-04",
+          "tof": 207,
+          "c3": 9.575049100229698,
+          "nominal_dv": 6.100518955797741,
+          "design_cvar90": 6.097378661438102,
+          "design_feasible": 1.0,
+          "policy": "fixed_buffer_7",
+          "stress_feasible": 0.8571428571428571,
+          "extreme_feasible": 0.0,
+          "uniform_feasible": 0.6774193548387096,
+          "max_inclination_deg": 3.5262787748801485
+        }
+      ]
+    },
+    {
+      "year": 2035,
+      "coarse_evaluations": 2318,
+      "fine_evaluations": 201,
+      "min_dv_unconstrained": {
+        "launch": "2035-06-29",
+        "arrival": "2036-01-16",
+        "c3": 10.424796072599348,
+        "dv": 5.746831657466298
+      },
+      "min_dv_under_c3": {
+        "launch": "2035-06-29",
+        "arrival": "2036-01-16",
+        "c3": 10.424796072599348,
+        "dv": 5.746831657466298
+      },
+      "status": "ok",
+      "reference_arrival": "2036-01-16",
+      "candidate_count": 585,
+      "incomplete_design_profiles": 0,
+      "solver_or_data_failures": 0,
+      "missing_policies": [],
+      "policies": [
+        {
+          "year": 2035,
+          "launch": "2035-06-29",
+          "arrival": "2036-01-16",
+          "tof": 201,
+          "c3": 10.424796072599348,
+          "nominal_dv": 5.746831657466298,
+          "design_cvar90": 5.859691915459811,
+          "design_feasible": 1.0,
+          "policy": "fixed_nominal",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 0.6666666666666666,
+          "uniform_feasible": 0.9032258064516129,
+          "max_inclination_deg": 0.8839706882972914
+        },
+        {
+          "year": 2035,
+          "launch": "2035-06-21",
+          "arrival": "2036-01-16",
+          "tof": 209,
+          "c3": 10.557250080959921,
+          "nominal_dv": 5.773331714270383,
+          "design_cvar90": 5.771579135846801,
+          "design_feasible": 1.0,
+          "policy": "fixed_cvar90",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 1.0,
+          "uniform_feasible": 1.0,
+          "max_inclination_deg": 1.1303176163084754
+        },
+        {
+          "year": 2035,
+          "launch": "2035-06-29",
+          "arrival": "2036-01-16",
+          "tof": 201,
+          "c3": 10.424796072599348,
+          "nominal_dv": 5.746831657466298,
+          "design_cvar90": 5.859691915459811,
+          "design_feasible": 1.0,
+          "policy": "flex_nominal",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 0.6666666666666666,
+          "uniform_feasible": 0.9032258064516129,
+          "max_inclination_deg": 0.8839706882972914
+        },
+        {
+          "year": 2035,
+          "launch": "2035-06-21",
+          "arrival": "2036-01-15",
+          "tof": 208,
+          "c3": 10.514612737547203,
+          "nominal_dv": 5.770023706777619,
+          "design_cvar90": 5.770332246367493,
+          "design_feasible": 1.0,
+          "policy": "flex_cvar90",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 1.0,
+          "uniform_feasible": 1.0,
+          "max_inclination_deg": 1.068982158422264
+        },
+        {
+          "year": 2035,
+          "launch": "2035-06-22",
+          "arrival": "2036-01-16",
+          "tof": 208,
+          "c3": 10.499983319030832,
+          "nominal_dv": 5.766951924664583,
+          "design_cvar90": 5.7733099055468236,
+          "design_feasible": 1.0,
+          "policy": "fixed_buffer_7",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 1.0,
+          "uniform_feasible": 1.0,
+          "max_inclination_deg": 1.091135350496911
+        },
+        {
+          "year": 2035,
+          "launch": "2035-06-15",
+          "arrival": "2036-01-16",
+          "tof": 215,
+          "c3": 11.154259379403415,
+          "nominal_dv": 5.834449268550086,
+          "design_cvar90": 5.8299640259673655,
+          "design_feasible": 1.0,
+          "policy": "fixed_buffer_14",
+          "stress_feasible": 1.0,
+          "extreme_feasible": 1.0,
+          "uniform_feasible": 1.0,
+          "max_inclination_deg": 1.4512104882077714
+        }
+      ]
+    }
+  ]
+}
